@@ -22,7 +22,7 @@ html, body{
     --primary-color2: #F66A97;
     --text-color: #ECECEC;
     --title-color: #000000;
-    --gradient-color: linear-gradient(180deg,#F66A97 0%,#9578F8 100%);
+    --gradient-color: linear-gradient(180deg,#F66A97 25%,#9578F8 100%);
     --gradient-color2: linear-gradient(90deg,#9578F8 0%,#F66A97 100%);
     --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
