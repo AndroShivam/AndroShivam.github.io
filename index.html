@@ -1,72 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- for android -->
-    <meta name="theme-color" content="#F66A97">
-     <!-- for mirosoft -->
-    <meta name="msapplication-navbutton-color" content="#F66A97">
-     <!-- for apple ios -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#F66A97">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Html</title>
 
-    <!-- Custom CSS File -->
     <link rel="stylesheet" href="./css/style.css">
+</head>
 
-  </head>
-  <body>
-      
-        <div class="container-fluid">
-        <div class="row min-vh-100 flex-column flex-md-row">
-            <aside class="aside-area col-sm-12 col-md-2 p-0 flex-shrink-1">
-                <nav class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start py-2">
-                    <div class="collapse navbar-collapse">
-                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                            <li class="nav-item active">
-                                <a class="nav-link my-3"href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link my-3" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link my-3" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link my-3" href="#">About</a>
-                            </li>
-                        </ul>
-                </div>
-                </nav>
-            </aside>
-            <main class="main-area bg-faded mt-5 flex-grow-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="main-name col-md-7 col-sm-12 order-2 order-md-0 d-block text-center text-md-left">
-                            <h1 class="main-text text-uppercase my-2">Shivam Sharma</h1>
-                            <h4 class="main-text text-capitalize">Passionate Software Developer</h4>
-                            <p class="main-para">I love to learn and create stuff.</p>
-                            <button class="main-btn btn">Hire Me</button>
-                        </div>
-                        <div class="main-img col-md-3 col-sm-12 order-1 order-md-1">
-                            <img src="./img/troye.jpg" class="img-fluid rounded-circle d-block w-75 my-2 d-block mx-md-0 mx-auto" alt="Image">
-                        </div>
-                    </div>
-                </div>
-            </main>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">LOGO</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-me">
+        <div class="about-me-container">
+            <div class="text-container">
+                <h1 class="text">Shivam Sharma</h1>
+                <p>Software Developer</p>
+                <button>Download Resume</button>
+            </div>
+            <div class="image-container">
+                <img class = "image" src = "./images/image.jpg" alt = "image" />
+          </div>
         </div>
+    </section>
+
+
+    <section class="tech-stack">
+        <h1>My Tech Stack</h1>
+        <div class="container">
+            <div class="card">
+                <h2>Android</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
+                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
+                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+            </div>
+
+            <div class="card">
+                <h2>Web</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
+                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
+                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+            </div>
+
+            <div class="card">
+                <h2>Python</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
+                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
+                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+            </div>
         </div>
-   
-   
+    </section>
 
+    <footer class="footer">
+        <div class="footer-container">
+            &copy; Shivam Sharma
+        </div>
+    </footer>
+</body>
 
-    <!-- jQuery first,then Bootstrap JS -->
-    
-    <script src="./js/JQuery3.4.1.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
 </html>
