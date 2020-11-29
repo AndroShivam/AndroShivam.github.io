@@ -4,70 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Html</title>
+    <title>Shivam Sharma</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">LOGO</h1>
+    <!-- Navbar Section -->
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-logo">Shivam</h1>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </nav>
-    </header>
 
+            <div class="hamburger-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Me Section -->
     <section class="about-me">
         <div class="about-me-container">
-            <div class="text-container">
-                <h1 class="text">Shivam Sharma</h1>
-                <p>Software Developer</p>
-                <button>Download Resume</button>
-            </div>
-            <div class="image-container">
-                <img class = "image" src = "./images/image.jpg" alt = "image" />
-          </div>
+            <img class="profile-img" src="./images/profile.png" alt="image" />
+            <h1>Shivam Sharma</h1>
+            <p>Software Developer | Otaku | Emo</p>
         </div>
     </section>
 
-
-    <section class="tech-stack">
-        <h1>My Tech Stack</h1>
-        <div class="container">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
             <div class="card">
-                <h2>Android</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
-                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
-                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+                <img class="card-image" src="./images/mountains.jpg" />
+                <div class="card-info">
+                    <h1>Android</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur dolorum eius cum aperiam illum praesentium facere excepturi neque libero?</p>
+                </div>
             </div>
 
             <div class="card">
-                <h2>Web</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
-                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
-                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+                <img class="card-image" src="./images/mountains.jpg" />
+                <div class="card-info">
+                    <h1>Web</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur dolorum eius cum aperiam illum praesentium facere excepturi neque libero?</p>
+                </div>
             </div>
 
             <div class="card">
-                <h2>Python</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ratione sit facere quos harum
-                    nobis alias deserunt laboriosam fuga praesentium itaque beatae. Quod ipsa totam veritatis neque
-                    quisquam tempora ex nisi accusantium dicta dolore libero expedita magni, repellendus alias vero?</p>
+                <img class="card-image" src="./images/mountains.jpg" />
+                <div class="card-info">
+                    <h1>Python</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur dolorum eius cum aperiam illum praesentium facere excepturi neque libero?</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            &copy; Shivam Sharma
-        </div>
+    <footer>
+        &copy; Shivam Sharma
     </footer>
 </body>
+
+<script src="./js/script.js">
+</script>
 
 </html>
