@@ -13,6 +13,8 @@
 
 :root {
     --font-color: #a9a9b3;
+    --dark-gray-bg: #252627;
+    --light-gray-bg: #292a2d;
 }
 
 * {
@@ -39,7 +41,7 @@ body {
 /* navbar section */
 
 .navbar-container {
-    background-color: #252627;
+    background-color: var(--dark-gray-bg);
     height: 80px;
     padding: 0 2rem;
     display: flex;
@@ -103,6 +105,20 @@ li>a:hover::after {
 }
 
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa-instagram, .fa-linkedin, .fa-github, .fa-twitter{
+    background: var(--light-gray-bg);
+    color: white;
+}
+
 /* about me section */
 
 .about-me {
@@ -142,49 +158,6 @@ li>a:hover::after {
     width: 160px;
 }
 
-
-/* projects section */
-
-.projects {
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.projects-container {
-    padding: 3rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    text-align: center;
-    overflow-y: auto;
-    padding: 10px;
-    width: 400px;
-    height: auto;
-    margin: 1rem;
-    cursor: pointer;
-    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2);
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-info {
-    padding: 10px;
-}
-
-.card:hover {
-    box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease all;
-}
 
 @media screen and (max-width: 725px) {
     .nav-links {
