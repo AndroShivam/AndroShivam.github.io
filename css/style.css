@@ -8,9 +8,6 @@
     src: url(/font/Gordita\ Bold.woff);
 }
 
-
-/* variables */
-
 :root {
     --font-color: #a9a9b3;
     --dark-gray-bg: #252627;
@@ -18,92 +15,78 @@
 }
 
 * {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: gordita;
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
+body {
+    font-family: gordita, sans-serif;
+}
 
-/*  dark gray #252627
-    light gray #292a2d
-    font #a9a9b3
-*/
-
-
-/* navbar section */
-
-.navbar-container {
-    background-color: var(--dark-gray-bg);
-    height: 10vh;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
     width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12px;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    background-color: var(--dark-gray-bg);
+    color: white;
 }
 
 .navbar-logo {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    color: white;
+    width: 50px;
+    height: auto;
+    filter: invert(100%);
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    transition: 0.3s ease all;
-}
-
-li>a {
-    padding: 0 1.2rem;
-    position: relative;
-    color: white;
-    text-decoration: none;
-}
-
-li>a::after {
-    position: absolute;
-    content: "";
-    bottom: -4px;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background-color: white;
-    display: block;
-}
-
-li>a:hover::after {
+.about {
     width: 100%;
-    transition: 0.3s ease all;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray-bg);
 }
 
-.nav-links.nav-active {
-    transform: translateX(0%);
+.about-container {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
 
-.hamburger-menu {
-    cursor: pointer;
-    display: none;
+.profile-img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
 }
 
-.hamburger-menu>div {
-    width: 24px;
-    height: 4px;
-    background-color: white;
-    margin: 3px;
-    border-radius: 10px;
-    transition: 0.3s ease all;
+.text-container {
+    text-align: center;
 }
 
+.text-name {
+    font-size: 2.5rem;
+    font-family: gordita-bold, sans-serif;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.fa-code {
+    font-size: 4rem;
+}
 
 .fa {
     padding: 20px;
@@ -113,80 +96,7 @@ li>a:hover::after {
     text-decoration: none;
 }
 
-
 .fa-instagram, .fa-linkedin, .fa-github, .fa-twitter{
     background: var(--light-gray-bg);
     color: white;
-}
-
-/* about me section */
-
-.about-me {
-    background-color: #292a2d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
-    width: auto;
-}
-
-.about-me-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.text-container {
-    text-align: center;
-}
-
-.text-name {
-    color: var(--font-color);
-    font-size: 2.5rem;
-    font-family: gordita-bold;
-}
-
-.text-about {
-    color: var(--font-color);
-    font-size: 1.1rem;
-}
-
-.profile-img {
-    border-radius: 50%;
-    height: 160px;
-    width: 160px;
-}
-
-
-@media screen and (max-width: 725px) {
-    .nav-links {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        width: 225px;
-        background-color: #252627;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        transform: translateX(-100%);
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    .bar-change .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .bar-change .bar2 {
-        opacity: 0;
-    }
-    .bar-change .bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-    .card {
-        width: 320px;
-    }
 }
